@@ -42,7 +42,6 @@ public class ProcessTest2 {
 	static void ping(String server, int port) {
 		try {
 			Socket echoSocket = new Socket();
-			//echoSocket.setSoTimeout(5000);
 			System.out.println("going to connect");
 			echoSocket.connect(new InetSocketAddress(server, port), 2000);
 			
@@ -62,7 +61,6 @@ public class ProcessTest2 {
 			echoSocket.close();
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
